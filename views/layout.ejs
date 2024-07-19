@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js MVC</title>
+  <style>
+    body {
+      margin: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f4f4f4;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tabela Periódica</h1>
+  <ul>
+    <% data.periodicTable.forEach(element=> { %>
+      <li>
+        <strong>
+          <%= element.symbol %>
+        </strong> -
+        <%= element.element %>
+          (Atomic Number: <%= element.atomicNumber %>)
+      </li>
+      <% }); %>
+  </ul>
+</body>
+
+</html>
