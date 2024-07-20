@@ -62,8 +62,7 @@ app.get('/consulta/:id', async (req, res) => {
     }
 });
 
-
-// Rota para criar um novo registro de analise
+// Rota para criar um novo registro de analise - avaliar
 app.post('/novolivro', async (req, res) => {
     try {
         const {
